@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./SoundList.css";
 
 import rawAduioLibrary from "./audioLibrary.json";
 
@@ -50,16 +49,22 @@ export default class SoundList extends React.Component<any, ISoundListState> {
     });
 
     return (
-      <section>
-        <p>
-          Do to certain restrictions, audio files are unabled to be previewed on
-          this page.
-        </p>
+      <div className="soundListControl">        
         <p>
           Search: <input type="text" onChange={this.onSearchTextChanged} />
         </p>
-        <table>{wordItems}</table>
-      </section>
+        <div className="table-responsive">
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Link</th>
+              </tr>
+            </thead>
+            {wordItems}
+          </table>
+        </div>
+      </div>
     );
   }
 

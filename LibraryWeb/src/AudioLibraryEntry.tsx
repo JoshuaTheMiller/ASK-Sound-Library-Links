@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./AudioLibraryEntry.css";
 
 export interface IAudioLibraryEntry {
   Category: string;
