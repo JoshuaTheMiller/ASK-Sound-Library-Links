@@ -26,7 +26,7 @@ export default class App extends React.Component {
             <p>
               Disclaimer: This is in no way sponsored by or affiliated with
               Amazon. I just wanted a searchable list of sounds. Additionally,
-              do to certain restrictions, audio files are unabled to be
+              due to certain restrictions, audio files are unabled to be
               previewed on this page.
             </p>
           </header>
